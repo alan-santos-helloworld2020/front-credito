@@ -15,13 +15,13 @@ export class CreditoService {
 
   constructor(private http: HttpClient ) {}
 
-  public  getCreditos(): Observable<CreditoDto[]> {
-    return this.http.get<CreditoDto[]>(this.apiUrl);
+  public  getCreditoByNumeroCredito(numeroCredito: String): Observable<CreditoDto> {
+    return this.http.get<CreditoDto>(`${this.apiUrl}/credito/${numeroCredito}`);
   }
 
    // Buscar um crédito pelo ID
-  public getCreditoByNumeroNsfe(numeroNfse: string): Observable<CreditoDto> {
-    return this.http.get<CreditoDto>(`${this.apiUrl}/${numeroNfse}`);
+  public getCreditoByNumeroNfse(numeroNfse: string): Observable<CreditoDto[]> {
+    return this.http.get<CreditoDto[]>(`${this.apiUrl}/${numeroNfse}`);
   }
 
 
