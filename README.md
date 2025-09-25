@@ -3,7 +3,7 @@
 Projeto **front-end** para consumir a API de crédito.
 
 🎥 **Demonstração no YouTube:**  
-[▶️ Assista aqui](https://youtu.be/u0AqadWLnXY)
+[▶️ Assista aqui](https://youtu.be/v6xBx_L4yjg)
 
 ---
 
